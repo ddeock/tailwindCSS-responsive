@@ -1,85 +1,277 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ============================================
+   Font Face 정의
+   ============================================ */
+@font-face {
+  font-family: 'pp-editorial-new';
+  src: url('/font/PPEditorialNew-Ultralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+@font-face {
+  font-family: 'pp-editorial-new';
+  src: url('/font/PPEditorialNew-Regular.otf') format('opentype');
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+@font-face {
+  font-family: 'pp-editorial-new';
+  src: url('/font/PPEditorialNew-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
 }
 
-html {
-  overflow-x: hidden;
+@font-face {
+  font-family: 'martian-mono';
+  src: url('/font/MartianMono-VariableFont_wdth,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pretendard';
+  src: url('/font/Pretendard-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ============================================
+   CSS 변수 정의
+   ============================================ */
+:root {
+  --width-container: 1920px;
+  --width-section: 1740px;
+  --width-section-inner: 1740px;
+  --color-accent-main: #21a0aa;
+  --color-accent-sub: #f94f46;
+  --color-accent-bright: #fdcb2a;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #5d5d5d;
+  --font-pp-editorial-new: 'pp-editorial-new', sans-serif;
+  --font-martian-mono: 'martian-mono', monospace;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-pretendard: 'pretendard', sans-serif;
+}
+
+/* ============================================
+   기본 스타일 리셋
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  overflow-x: hidden;
+  font-family: var(--font-pretendard);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  line-height: 1.5;
+}
+
+img {
   max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-.wrap {
-  width: 100%;
-  max-width: 1280px;
+/* ============================================
+   공통 섹션 타이틀 클래스
+   ============================================ */
+.section-main-title {
+  position: relative;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   margin: 0 auto;
-  padding: 0 2rem;
+}
+
+.section-deco-title {
+  position: absolute;
+  left: -109px;
+  top: -88px;
+  width: 351.16px;
+  background-color: var(--color-accent-main);
+  transform: rotate(-13deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 70px 20px;
+}
+
+.deco-title-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1.8px;
+  color: var(--color-white);
+}
+
+.section-title-text {
+  font-family: var(--font-martian-mono);
+  font-weight: 700;
+  font-size: 245px;
+  line-height: 1;
+  letter-spacing: -7.35px;
+  color: var(--color-black);
+  margin: 0;
+  padding: 0;
+}
+
+.section-text-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.sub-title {
+  width: 100%;
+}
+
+.sub-title-text {
+  display: block;
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-black);
+  text-align: center;
+}
+
+.sub-title-italic {
+  font-style: italic;
+  display: block;
+}
+
+.sub-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-text-content {
+  font-family: var(--font-pretendard);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.54px;
+  color: var(--color-black);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   공통 small-title-box (TeamProject & UIUX)
+   ============================================ */
+.small-title-box {
+  width: 1440px;
+  max-width: 100%;
+  background-color: var(--color-black);
+  border-radius: 34px;
+  padding: 118px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.small-main-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-main-title-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 132px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+.small-sub-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.small-sub-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-sub-title-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.small-sub-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-sub-text-content {
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.54px;
+  color: var(--color-white);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   contact-tel (Footer)
+   ============================================ */
+.contact-tel {
+  width: 60%;
+  height: 160px;
+  background-color: var(--color-accent-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 100px 20px;
+}
+
+.contact-tel-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--color-black);
 }

@@ -1,0 +1,506 @@
+/* ============================================
+   About - Desktop Base
+   ============================================ */
+.desktop-section-about {
+  padding-top: 320px;
+  padding-bottom: 160px;
+}
+
+.about-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.paper-airplane {
+  position: absolute;
+  left: 359px;
+  top: 194px;
+  width: 133px;
+  height: 100px;
+}
+
+.paper-airplane img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-main-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.about-bottom-box {
+  width: 53%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.edu-title {
+  width: 21%;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.edu-title-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.56px;
+  color: var(--color-black);
+  margin: 0;
+  padding: 0;
+}
+
+.edu-text {
+  width: 71%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edu-list {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.check-icon {
+  width: 14px;
+  height: 15px;
+  flex-shrink: 0;
+  margin-top: 5.5px;
+}
+
+.check-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.edu-list-text {
+  flex: 1;
+}
+
+.edu-list-text span {
+  font-family: var(--font-pretendard);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.66px;
+  color: var(--color-black);
+}
+
+/* ============================================
+   About - Tablet (768px ~ 1024px)
+   ============================================ */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .desktop-section-about {
+    padding-top: 320px;
+    padding-bottom: 160px;
+  }
+
+  .desktop-section-about .about-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .desktop-section-about .section-main-title {
+    position: relative;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .desktop-section-about .section-deco-title {
+    position: absolute;
+    left: -19px;
+    top: -73px;
+    width: 256.04px;
+    background-color: var(--color-accent-main);
+    transform: rotate(-13deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 20px;
+  }
+
+  .desktop-section-about .deco-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    color: var(--color-white);
+  }
+
+  .desktop-section-about .section-title-text {
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 17.578vw;
+    line-height: 1;
+    letter-spacing: -0.527vw;
+    color: var(--color-black);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .desktop-section-about .paper-airplane {
+    position: absolute;
+    left: 317px;
+    top: 138px;
+    width: 133px;
+    height: 100px;
+  }
+
+  .desktop-section-about .paper-airplane img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .desktop-section-about .about-main-text {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+  }
+
+  .desktop-section-about .section-text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .desktop-section-about .sub-title {
+    width: 100%;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-about .sub-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: clamp(32px, 7.8125vw - 28px, 52px);
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: var(--color-black);
+    text-align: center;
+  }
+
+  .desktop-section-about .sub-text {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-section-about .sub-text-content {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.48px;
+    color: var(--color-black);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-section-about .about-bottom-box {
+    width: 883px;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .desktop-section-about .edu-title {
+    width: 198px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-about .edu-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.56px;
+    color: var(--color-black);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-section-about .edu-text {
+    width: 661px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .desktop-section-about .edu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    height: 24px;
+  }
+
+  .desktop-section-about .check-icon {
+    width: 14px;
+    height: 15.01px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .desktop-section-about .check-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .desktop-section-about .edu-list-text {
+    display: flex;
+    align-items: center;
+    height: 24px;
+  }
+
+  .desktop-section-about .edu-list-text span {
+    font-family: var(--font-pretendard);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    color: var(--color-black);
+  }
+}
+
+/* ============================================
+   About - Mobile (≤768px)
+   ============================================ */
+@media (max-width: 768px) {
+  .desktop-section-about {
+    padding-top: 180px;
+    padding-bottom: 160px;
+  }
+
+  .desktop-section-about .about-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 168px;
+    align-items: center;
+  }
+
+  .desktop-section-about .section-main-title {
+    position: relative;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .desktop-section-about .section-deco-title {
+    position: absolute;
+    left: -100px;
+    top: -70px;
+    width: 220.36px;
+    background-color: var(--color-accent-main);
+    transform: rotate(-13deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 20px;
+  }
+
+  .desktop-section-about .deco-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -1.2px;
+    color: var(--color-white);
+  }
+
+  .desktop-section-about .section-title-text {
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 1;
+    letter-spacing: -4.2px;
+    color: var(--color-black);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .desktop-section-about .paper-airplane {
+    position: absolute;
+    left: 170px;
+    top: 99px;
+    width: 133px;
+    height: 100px;
+  }
+
+  .desktop-section-about .paper-airplane img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .desktop-section-about .about-main-text {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    align-items: center;
+  }
+
+  .desktop-section-about .section-text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .desktop-section-about .sub-title {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-about .sub-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: clamp(18px, 3.125vw + 8px, 32px);
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: var(--color-black);
+    text-align: center;
+  }
+
+  .desktop-section-about .sub-text {
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-section-about .sub-text-content {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.42px;
+    color: var(--color-black);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-section-about .about-bottom-box {
+    width: 470px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .desktop-section-about .edu-title {
+    width: 470px;
+    height: 31px;
+    flex-shrink: 0;
+  }
+
+  .desktop-section-about .edu-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.48px;
+    color: var(--color-black);
+    text-align: center;
+  }
+
+  .desktop-section-about .edu-text {
+    width: 661px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .desktop-section-about .edu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    height: 22px;
+  }
+
+  .desktop-section-about .check-icon {
+    width: 14px;
+    height: 15.01px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .desktop-section-about .check-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .desktop-section-about .edu-list-text {
+    display: flex;
+    align-items: center;
+    height: 22px;
+  }
+
+  .desktop-section-about .edu-list-text span {
+    font-family: var(--font-pretendard);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: -0.54px;
+    color: var(--color-black);
+  }
+}

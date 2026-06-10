@@ -1,0 +1,315 @@
+/* ============================================
+   Project - Desktop Base
+   ============================================ */
+.desktop-section-project {
+  padding-top: 315px;
+  padding-bottom: 0;
+}
+
+.project-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+
+.desktop-section-project .section-main-title {
+  position: relative;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.desktop-section-project .section-deco-title {
+  position: absolute;
+  left: -90px;
+  top: -110px;
+  width: 417.42px;
+  background-color: var(--color-accent-sub);
+  transform: rotate(-13deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 70px 20px;
+}
+
+.desktop-section-project .deco-title-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1.8px;
+  color: #fff5f5;
+}
+
+.desktop-section-project .section-title-text {
+  font-family: var(--font-martian-mono);
+  font-weight: 700;
+  font-size: 245px;
+  line-height: 1;
+  letter-spacing: -7.35px;
+  color: var(--color-black);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.desktop-section-project .section-text-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.desktop-section-project .sub-title {
+  width: 100%;
+}
+
+.desktop-section-project .sub-title-text {
+  display: block;
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-black);
+  text-align: center;
+}
+
+.desktop-section-project .sub-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-section-project .sub-text-content {
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.54px;
+  color: var(--color-black);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   Project - Tablet (768px ~ 1024px)
+   ============================================ */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .desktop-section-project {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .desktop-section-project .project-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .desktop-section-project .section-main-title {
+    position: relative;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .desktop-section-project .section-deco-title {
+    position: absolute;
+    left: 112.5px;
+    top: -100px;
+    width: 311.58px;
+    background-color: var(--color-accent-sub);
+    transform: rotate(-13deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 20px;
+  }
+
+  .desktop-section-project .deco-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    color: var(--color-white);
+  }
+
+  .desktop-section-project .section-title-text {
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 17.578vw;
+    line-height: 1;
+    letter-spacing: -0.527vw;
+    color: var(--color-black);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .desktop-section-project .section-text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .desktop-section-project .sub-title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-project .sub-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: clamp(32px, 7.8125vw - 28px, 52px);
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: var(--color-black);
+    text-align: center;
+  }
+
+  .desktop-section-project .sub-text {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-section-project .sub-text-content {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.48px;
+    color: var(--color-black);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* ============================================
+   Project - Mobile (≤768px)
+   ============================================ */
+@media (max-width: 768px) {
+  .desktop-section-project {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .desktop-section-project .project-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .desktop-section-project .section-main-title {
+    position: relative;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .desktop-section-project .section-deco-title {
+    position: absolute;
+    left: 300px;
+    top: -95.41px;
+    width: 265.19px;
+    background-color: var(--color-accent-sub);
+    transform: rotate(-13deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 20px;
+  }
+
+  .desktop-section-project .deco-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -1.2px;
+    color: #fff5f5;
+  }
+
+  .desktop-section-project .section-title-text {
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 1;
+    letter-spacing: -4.2px;
+    color: var(--color-black);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .desktop-section-project .section-text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .desktop-section-project .sub-title {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-project .sub-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: clamp(18px, 3.125vw + 8px, 32px);
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: var(--color-black);
+    text-align: center;
+  }
+
+  .desktop-section-project .sub-text {
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-section-project .sub-text-content {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.42px;
+    color: var(--color-black);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}

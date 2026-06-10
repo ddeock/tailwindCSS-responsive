@@ -1,0 +1,608 @@
+/* ============================================
+   UIUX - Desktop Base
+   ============================================ */
+.desktop-section-uiux {
+  padding-top: 320px;
+  padding-bottom: 240px;
+}
+
+.uiux-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 310px;
+  align-items: center;
+}
+
+.desktop-section-uiux .small-title-box {
+  width: 1440px;
+  max-width: 100%;
+  background-color: var(--color-black);
+  border-radius: 34px;
+  padding: 118px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.desktop-section-uiux .small-main-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-section-uiux .small-main-title-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 132px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-section-uiux .small-sub-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.desktop-section-uiux .small-sub-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-section-uiux .small-sub-title-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.desktop-section-uiux .small-sub-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-section-uiux .small-sub-text-content {
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.54px;
+  color: var(--color-white);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.uiux-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+}
+
+.desktop-section-uiux .list {
+  width: 100%;
+  display: flex;
+  gap: 84px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.list-box {
+  width: 678px;
+  height: 481.52px;
+  background-color: var(--color-white);
+  border: 1px solid #0c0c0c;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding: 25px 0;
+}
+
+.heart-box {
+  width: 100%;
+  height: 23.52px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 24px;
+}
+
+.heart-icon {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.uiux-img {
+  width: 100%;
+  height: 362px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.uiux-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uiux-name-box {
+  width: 100%;
+  height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  margin-top: 10px;
+}
+
+.img-name {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.img-name-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.72px;
+  color: var(--color-black);
+}
+
+.date {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.date-text {
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.48px;
+  color: var(--color-black);
+}
+
+/* ============================================
+   UIUX - Tablet (768px ~ 1024px)
+   ============================================ */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .desktop-section-uiux {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  .desktop-section-uiux .uiux-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+    align-items: center;
+  }
+
+  .desktop-section-uiux .small-title-box {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-black);
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 0;
+  }
+
+  .desktop-section-uiux .small-main-title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .small-main-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 11.719vw;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-section-uiux .small-sub-box {
+    width: 457px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .small-sub-title {
+    width: 362px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .small-sub-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-white);
+    text-align: center;
+  }
+
+  .desktop-section-uiux .small-sub-text {
+    width: 457px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .small-sub-text-content {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.48px;
+    color: var(--color-white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-section-uiux .uiux-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    align-items: center;
+  }
+
+  .desktop-section-uiux .list {
+    width: 687px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .desktop-section-uiux .list-box {
+    width: 678px;
+    height: 481.52px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    padding: 25px 0 0;
+  }
+
+  .desktop-section-uiux .heart-box {
+    width: 678px;
+    height: 23.52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 24px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+  }
+
+  .desktop-section-uiux .heart-box img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .desktop-section-uiux .uiux-img {
+    width: 678px;
+    height: 362px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33.52px;
+  }
+
+  .desktop-section-uiux .uiux-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .desktop-section-uiux .uiux-name-box {
+    width: 100%;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+  .desktop-section-uiux .img-name {
+    width: 188px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop-section-uiux .img-name-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.72px;
+    color: var(--color-black);
+  }
+
+  .desktop-section-uiux .date {
+    width: 52px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .date-text {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.42px;
+    color: var(--color-black);
+    text-align: center;
+  }
+}
+
+/* ============================================
+   UIUX - Mobile (≤768px)
+   ============================================ */
+@media (max-width: 768px) {
+  .desktop-section-uiux {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  .desktop-section-uiux .uiux-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    align-items: center;
+  }
+
+  .desktop-section-uiux .small-title-box {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-black);
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+  }
+
+  .desktop-section-uiux .small-main-title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .small-main-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-section-uiux .small-sub-box {
+    width: 457px;
+    height: 71px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .small-sub-title {
+    width: 310px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .small-sub-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: var(--color-white);
+    text-align: center;
+  }
+
+  .desktop-section-uiux .small-sub-text {
+    width: 457px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .small-sub-text-content {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.42px;
+    color: var(--color-white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-section-uiux .uiux-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .desktop-section-uiux .list {
+    width: 675px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .desktop-section-uiux .list-box {
+    width: 678px;
+    height: 481.52px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    padding: 25px 0 0;
+  }
+
+  .desktop-section-uiux .heart-box {
+    width: 678px;
+    height: 23.52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 16px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+  }
+
+  .desktop-section-uiux .heart-box img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .desktop-section-uiux .uiux-img {
+    width: 678px;
+    height: 362px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33.52px;
+  }
+
+  .desktop-section-uiux .uiux-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .desktop-section-uiux .uiux-name-box {
+    width: 100%;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .desktop-section-uiux .img-name {
+    width: 188px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop-section-uiux .img-name-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.72px;
+    color: var(--color-black);
+  }
+
+  .desktop-section-uiux .date {
+    width: 59px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-uiux .list-box .date {
+    width: 45px;
+    height: 13px;
+  }
+
+  .desktop-section-uiux .date-text {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.48px;
+    color: var(--color-black);
+    text-align: center;
+  }
+
+  .desktop-section-uiux .list-box .date-text {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: -0.36px;
+  }
+}

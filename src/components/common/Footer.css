@@ -1,0 +1,370 @@
+/* ============================================
+   Footer (Contact) - Desktop Base
+   ============================================ */
+.desktop-section-contact {
+  padding-top: 200px;
+  padding-bottom: 140px;
+  background-color: var(--color-black);
+}
+
+.contact-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.desktop-section-contact .section-main-title {
+  position: relative;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.desktop-section-contact .section-deco-title {
+  position: absolute;
+  left: calc(50% + 170px);
+  top: -105px;
+  width: 254.29px;
+  background-color: var(--color-accent-sub);
+  transform: rotate(14deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 70px 20px;
+}
+
+.desktop-section-contact .deco-title-text {
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1.8px;
+  color: #fff5f5;
+}
+
+.desktop-section-contact .section-title-text {
+  font-family: var(--font-martian-mono);
+  font-weight: 700;
+  font-size: 245px;
+  line-height: 1;
+  letter-spacing: -7.35px;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.desktop-section-contact .section-text-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.desktop-section-contact .sub-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-section-contact .sub-title-text {
+  display: block;
+  font-family: var(--font-pp-editorial-new);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 60px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.desktop-section-contact .sub-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-section-contact .sub-text-content {
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.54px;
+  color: var(--color-white);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   Footer (Contact) - Tablet (768px ~ 1024px)
+   ============================================ */
+@media (max-width: 1024px) and (min-width: 768px) {
+  :root {
+    --width-container: 1024px;
+    --width-section: 960px;
+    --width-section-inner: 960px;
+  }
+
+  .desktop-section-contact {
+    padding-top: 280px;
+    padding-bottom: 280px;
+    background-color: var(--color-black);
+  }
+
+  .desktop-section-contact .contact-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .desktop-section-contact .section-main-title {
+    position: relative;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .desktop-section-contact .section-deco-title {
+    position: absolute;
+    left: calc(50% + 120px);
+    top: -82px;
+    width: 193.86px;
+    background-color: var(--color-accent-sub);
+    transform: rotate(14deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 80px 15px;
+  }
+
+  .desktop-section-contact .deco-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1.8px;
+    color: var(--color-white);
+  }
+
+  .desktop-section-contact .section-title-text {
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 17.578vw;
+    line-height: 1;
+    letter-spacing: -0.527vw;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .desktop-section-contact .section-text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .desktop-section-contact .sub-title {
+    width: 100%;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-contact .sub-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(32px, 7.8125vw - 28px, 52px);
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: var(--color-white);
+    text-align: center;
+  }
+
+  .desktop-section-contact .sub-text {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-section-contact .sub-text-content {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.48px;
+    color: var(--color-white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-section-contact .contact-tel {
+    width: 80%;
+    height: 150px;
+    background-color: var(--color-accent-bright);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 35px 80px 15px;
+  }
+
+  .desktop-section-contact .contact-tel-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 9.766vw;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-black);
+    text-align: center;
+  }
+}
+
+/* ============================================
+   Footer (Contact) - Mobile (≤768px)
+   ============================================ */
+@media (max-width: 768px) {
+  .desktop-section-contact {
+    padding-top: 191px;
+    padding-bottom: 191px;
+    background-color: var(--color-black);
+  }
+
+  .desktop-section-contact .contact-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .desktop-section-contact .section-main-title {
+    position: relative;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .desktop-section-contact .section-deco-title {
+    position: absolute;
+    left: calc(50% + 60px);
+    top: -115px;
+    width: 191.11px;
+    background-color: var(--color-accent-sub);
+    transform: rotate(14deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 80px 15px;
+  }
+
+  .desktop-section-contact .deco-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1.8px;
+    color: var(--color-white);
+  }
+
+  .desktop-section-contact .section-title-text {
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 1;
+    letter-spacing: -4.2px;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .desktop-section-contact .section-text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .desktop-section-contact .sub-title {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-section-contact .sub-title-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(18px, 3.125vw + 8px, 32px);
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: var(--color-white);
+    text-align: center;
+  }
+
+  .desktop-section-contact .sub-text {
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-section-contact .sub-text-content {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.42px;
+    color: var(--color-white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-section-contact .contact-tel {
+    width: 80%;
+    background-color: var(--color-accent-bright);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
+
+  .desktop-section-contact .contact-tel-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 9.766vw;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-black);
+    text-align: center;
+  }
+}
