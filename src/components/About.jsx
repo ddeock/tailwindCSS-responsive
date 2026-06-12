@@ -1,8 +1,56 @@
+import { useEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './About.css'
 
+gsap.registerPlugin(ScrollTrigger)
+
 function About() {
+  useEffect(() => {
+    // 타이틀 영역 애니메이션
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.desktop-section-about .section-main-title',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        //markers: true,
+        scrub: 1,
+      }
+    })
+
+    // section-title-text 먼저 올라오고 → deco는 왼쪽, paper-airplane은 오른쪽에서
+    tl.fromTo('.desktop-section-about .section-title-text',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0)
+      .fromTo('.desktop-section-about .section-deco-title',
+        { x: -100, opacity: 0}, { x: 0, opacity: 1, ease: 'none', duration: 1 }, 1)
+      .fromTo('.desktop-section-about .paper-airplane',
+        { x: 100, opacity: 0 }, { x: 0, opacity: 1, ease: 'none', duration: 1 }, 1)
+
+    // about-main-text 영역 순차 slide-up
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.about-main-text',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        //markers: true,
+        scrub: 1,
+      }
+    })
+
+    tl2.fromTo('.desktop-section-about .sub-title-text',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0)
+      .fromTo('.desktop-section-about .sub-text',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0.4)
+      .fromTo('.desktop-section-about .about-bottom-box',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0.8)
+
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.kill())
+    }
+  }, [])
+
   return (
-    <section className="desktop-section-aboutw-[95%] max-w-[1740px] max-[1024px]:w-[95%] mx-auto">
+    <section className="desktop-section-about w-[95%] max-w-[1740px] max-[1024px]:w-[95%] mx-auto">
       <div className="about-inner w-full mx-auto">
         <div className="section-main-title">
           <div className="section-deco-title">

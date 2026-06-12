@@ -8,9 +8,9 @@ function Header() {
           <img src="/images/logo.svg" alt="J.YOUNG'S PORTFOLIO" />
         </div>
         <nav className="gnb">
-          <a href="#" className="gnb-item">홈</a>
-          <a href="#" className="gnb-item">어바웃</a>
-          <a href="#" className="gnb-item">스킬</a>
+          <a href="#" className="gnb-item">HOME</a>
+          <a href="#" className="gnb-item">ABOUT</a>
+          <a href="#" className="gnb-item">SKILL</a>
           <a href="#" className="gnb-item">PROJECT</a>
           <a href="#" className="gnb-item">UIUX</a>
           <a href="#" className="gnb-item">CONTACT</a>

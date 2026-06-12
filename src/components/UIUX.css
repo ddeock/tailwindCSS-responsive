@@ -284,11 +284,16 @@
   }
 
   .desktop-section-uiux .uiux-box {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 56px;
     align-items: center;
+  }
+
+  .desktop-section-uiux .uiux-box .list-box {
+    width: 100%;
   }
 
   .desktop-section-uiux .list {
@@ -332,11 +337,8 @@
   }
 
   .desktop-section-uiux .uiux-img {
-    width: 678px;
+    width: 100%;
     height: 362px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 33.52px;
   }
 
@@ -344,6 +346,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
 
   .desktop-section-uiux .uiux-name-box {
@@ -519,15 +522,11 @@
   }
 
   .desktop-section-uiux .heart-box {
-    width: 678px;
-    height: 23.52px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    height: 16.52px;
     padding-right: 16px;
     position: absolute;
-    top: 25px;
-    left: 0;
+    top: 24px;
+    left: -13px;
   }
 
   .desktop-section-uiux .heart-box img {
@@ -552,13 +551,9 @@
   }
 
   .desktop-section-uiux .uiux-name-box {
-    width: 100%;
-    height: 26px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
+    width: 95%;
+    margin: 20px auto 0;
+    padding: 0;
   }
 
   .desktop-section-uiux .img-name {

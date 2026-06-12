@@ -1,6 +1,53 @@
+import { useEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './Skill.css'
 
+gsap.registerPlugin(ScrollTrigger)
+
 function Skill() {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.skill-frame',
+        start: 'top 80%',
+        end: 'bottom 60%',
+       // markers: true,
+      }
+    })
+
+    // 체이닝 fromTo: skill-text 7개 순차적으로 아래에서 위로
+    tl.fromTo('.skill-text-1', { y: 100 }, { y: 0, ease: 'power2.out', duration: 0.3 }, 0)
+      .fromTo('.skill-text-2', { y: 100 }, { y: 0, ease: 'power2.out', duration: 0.3 }, 0.15)
+      .fromTo('.skill-text-3', { y: 100 }, { y: 0, ease: 'power2.out', duration: 0.3 }, 0.3)
+      .fromTo('.skill-text-4', { y: 100 }, { y: 0, ease: 'power2.out', duration: 0.3 }, 0.45)
+      .fromTo('.skill-text-5', { y: 100 }, { y: 0, ease: 'power2.out', duration: 0.3 }, 0.6)
+      .fromTo('.skill-text-6', { y: 100 }, { y: 0, ease: 'power2.out', duration: 0.3 }, 0.75)
+      .fromTo('.skill-text-7', { y: 100 }, { y: 0, ease: 'power2.out', duration: 0.3 }, 0.9)
+
+    // 아이콘 애니메이션 (skill-text와 별도 타임라인)
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.skill-frame',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        //markers: true,
+      }
+    })
+
+    // 1, 3, 5 — 왼쪽에서 제자리로
+    tl2.fromTo('.skill-icon-1', { x: -100 }, { x: 0, ease: 'power2.out', duration: 0.3 }, 0)
+       .fromTo('.skill-icon-3', { x: -100 }, { x: 0, ease: 'power2.out', duration: 0.3 }, 0.15)
+       .fromTo('.skill-icon-5', { x: -100 }, { x: 0, ease: 'power2.out', duration: 0.3 }, 0.3)
+    // 2, 4 — 오른쪽에서 제자리로
+       .fromTo('.skill-icon-2', { x: 100 }, { x: 0, ease: 'power2.out', duration: 0.3 }, 0)
+       .fromTo('.skill-icon-4', { x: 100 }, { x: 0, ease: 'power2.out', duration: 0.3 }, 0.15)
+
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.kill())
+    }
+  }, [])
+
   return (
     <section className="desktop-section-skill w-[95%] max-w-[1740px] max-[1024px]:w-[95%] mx-auto">
       <div className="skill-inner w-full mx-auto">

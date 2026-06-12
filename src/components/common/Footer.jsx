@@ -1,6 +1,39 @@
+import { useEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './Footer.css'
 
+gsap.registerPlugin(ScrollTrigger)
+
 function Footer() {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.contact-inner',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        //markers: true,
+        scrub: 1,
+      }
+    })
+
+    // 순차 slide-up + deco-title은 왼쪽에서 제자리로
+    tl.fromTo('.desktop-section-contact .section-main-title',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0)
+      .fromTo('.desktop-section-contact .section-deco-title',
+        { x: -100 }, { x: 0, ease: 'none', duration: 1 }, 0)
+      .fromTo('.desktop-section-contact .sub-title-text',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0.4)
+      .fromTo('.desktop-section-contact .sub-text-content',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0.8)
+      .fromTo('.contact-tel',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 1.2)
+
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.kill())
+    }
+  }, [])
+
   return (
     <section className="desktop-section-contact w-full mx-auto">
       <div className="contact-inner w-full mx-auto">

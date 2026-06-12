@@ -1,6 +1,52 @@
+import { useEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './TeamProject.css'
 
+gsap.registerPlugin(ScrollTrigger)
+
 function TeamProject() {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.teamproject-img',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        //markers: true,
+        scrub: 1,
+      }
+    })
+
+    // teamproject-img-girl 먼저 → team-img-sun 순차적으로 아래에서 위로
+    tl.fromTo('.teamproject-img-girl',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0)
+      .fromTo('.team-img-sun',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0.4)
+
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.teamproject-box',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        //markers: true,
+        scrub: 1,
+      }
+    })
+
+    // small-title-box → teamproject-list 3개 순차적으로 아래에서 위로
+    tl2.fromTo('.small-title-box',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0)
+
+    // 같은 클래스 3개를 개별로 체이닝
+    gsap.utils.toArray('.teamproject-list').forEach((el, i) => {
+      tl2.fromTo(el, { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0.4 + i * 0.4)
+    })
+
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.kill())
+    }
+  }, [])
+
   return (
     <section className="desktop-section-teamproject w-[95%] max-w-[1740px] max-[1024px]:w-[95%] mx-auto">
       <div className="teamproject-inner w-full mx-auto">

@@ -1,6 +1,48 @@
+import { useEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './Project.css'
 
+gsap.registerPlugin(ScrollTrigger)
+
 function Project() {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.desktop-section-project .section-main-title',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        //markers: true,
+        scrub: 1,
+      }
+    })
+
+    // section-main-title 아래서 위로 → deco-title 왼쪽에서 제자리로
+    tl.fromTo('.desktop-section-project .section-title-text',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0)
+      .fromTo('.desktop-section-project .section-deco-title',
+        { x: -100 }, { x: 0, ease: 'none', duration: 1 }, 1)
+
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.desktop-section-project .section-text-box',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        //markers: true,
+        scrub: 1,
+      }
+    })
+
+    tl2.fromTo('.desktop-section-project .sub-title-text',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0)
+      .fromTo('.desktop-section-project .sub-text',
+        { y: 50 }, { y: 0, ease: 'none', duration: 1 }, 0.4)
+
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.kill())
+    }
+  }, [])
+
   return (
     <section className="desktop-section-project w-[95%] max-w-[1740px] max-[1024px]:w-[95%] mx-auto">
       <div className="project-inner w-full mx-auto">

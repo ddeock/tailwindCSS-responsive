@@ -1,6 +1,35 @@
+import { useEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './UIUX.css'
 
+gsap.registerPlugin(ScrollTrigger)
+
 function UIUX() {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.uiux-inner',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        //markers: true,
+        scrub: 1,
+      }
+    })
+
+    // small-title-box 먼저, 이후 list 3개 순차 체이닝 fromTo
+    tl.fromTo('.desktop-section-uiux .small-title-box',
+        { y: 72 }, { y: 0, ease: 'none', duration: 1 }, 0)
+
+    gsap.utils.toArray('.desktop-section-uiux .list').forEach((el, i) => {
+      tl.fromTo(el, { y: 72 }, { y: 0, ease: 'none', duration: 1 }, 0.4 + i * 0.4)
+    })
+
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.kill())
+    }
+  }, [])
+
   return (
     <section className="desktop-section-uiux w-[95%] max-w-[1740px] max-[1024px]:w-[95%] mx-auto">
       <div className="uiux-inner w-full max-w-[1440px] mx-auto max-[1440px]:w-[95%]">

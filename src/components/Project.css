@@ -81,6 +81,11 @@
   text-align: center;
 }
 
+.desktop-section-project .sub-title-text .sub-title-italic {
+  display: block;
+  font-style: italic;
+}
+
 .desktop-section-project .sub-text {
   width: 100%;
   display: flex;

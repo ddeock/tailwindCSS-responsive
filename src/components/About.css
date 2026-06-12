@@ -14,7 +14,7 @@
 
 .paper-airplane {
   position: absolute;
-  left: 359px;
+  left: 310px;
   top: 194px;
   width: 133px;
   height: 100px;
@@ -42,7 +42,7 @@
 }
 
 .edu-title {
-  width: 21%;
+  width: 30%;
   height: 36px;
   flex-shrink: 0;
 }
@@ -59,7 +59,6 @@
 }
 
 .edu-text {
-  width: 71%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -125,7 +124,7 @@
 
   .desktop-section-about .section-deco-title {
     position: absolute;
-    left: -19px;
+    left: -100px;
     top: -73px;
     width: 256.04px;
     background-color: var(--color-accent-main);
@@ -159,8 +158,8 @@
 
   .desktop-section-about .paper-airplane {
     position: absolute;
-    left: 317px;
-    top: 138px;
+    left: 230px;
+    top: 130px;
     width: 133px;
     height: 100px;
   }
@@ -227,7 +226,6 @@
 
   .desktop-section-about .about-bottom-box {
     width: 883px;
-    height: 160px;
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -432,38 +430,36 @@
   }
 
   .desktop-section-about .about-bottom-box {
-    width: 470px;
-    height: 205px;
+    width: 70%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 24px;
+    justify-content: space-between;
     align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
   }
 
   .desktop-section-about .edu-title {
-    width: 470px;
-    height: 31px;
+    width: 100%;
+    height: 36px;
     flex-shrink: 0;
   }
 
   .desktop-section-about .edu-title-text {
     font-family: var(--font-pp-editorial-new);
     font-weight: 400;
-    font-size: 24px;
-    line-height: 1.2;
-    letter-spacing: -0.48px;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.56px;
     color: var(--color-black);
-    text-align: center;
+    margin: 0;
+    padding: 0;
   }
 
   .desktop-section-about .edu-text {
-    width: 661px;
-    height: 150px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: flex-start;
   }
 
   .desktop-section-about .edu-list {
